@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Media</title>
+</head>
+
 <style>
+
     body{
         height: 800px;
     }
-    .banner{
+    .banner {
         border-radius: 25px;
         width: 95%;
         background-color: red;
@@ -29,7 +36,7 @@
         margin-top: 2%;
         height: 100%;
     }
-    .row{
+    .row {
         width: 100%;
         height: 100%;
         display: flex;
@@ -44,33 +51,65 @@
     header{
         width: 100%;
         display: flex;
-        
+
+    }
+    @media screen and (max-width:768px){
+        div.artigo {
+            width: 80%;
+            background-color: green;
+            height: 200px;
+            display: flex;
+            margin: 1% auto;
+
+        }
+        div.banner {
+            width: 100%;
+            background-color: gold;
+            margin: 0 auto;
+
+        }
+        footer{
+            margin: 10% 2% 1% 2%;
+            background-color: gold;
+        }
+    }
+    @media screen and (max-width:440px){
+        div.artigo {
+            width: 90%;
+            background-color: chocolate;
+            margin: 1% auto;
+
+        }
+        div.banner {
+            width: 100%;
+            background-color: rebeccapurpleed;
+            margin: 0 auto;
+
+        }
+        footer{
+            margin: 10% 2% 1% 2%;
+            height: 100px;
+            background-color: rebeccapurpleed;
+            width: 90%;
+        }
+    }
+    @media screen and (max-width:372px){
+        div.artigo {
+            width: 98%;
+            background-color: blueviolet;
+            margin: 1% auto;
+
+        }
+        div.banner {
+            display: none !important;
+
+        }
+        footer{
+            display: none !important;
+        }
     }
 </style>
-<head>
-    <meta charset="UTF-8">
-    <title>Media</title>
-    <script>
-    </script>
-</head>
 <body>
-<header>
-    <nav class="nav">
-
-    </nav>
-
-    <nav class="nav">
-
-    </nav>
-
-    <nav class="nav">
-
-    </nav>
-
-    <nav class="nav">
-
-    </nav>
-</header>
 <section class="container">
     <div class="banner">
     </div>
